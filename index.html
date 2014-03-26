@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ScriptButtonCreator</title>
+<link rel="stylesheet" type="text/css" href="sbc.css">
+<script src="sbc.js"></script>
+</head>
+<body>
+<p>
+  <a href="//github.com/malteschmitz/sbc"><img class="fork" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+</p>
+
+<div class="sbc">
+
+<h1>ScriptButtonCreator</h1>
+
+<p class="sbchead">Einstellungen</p>
+
+<form name="opt">
+<table class="sbc">
+<tr>
+ <th class="sbc">Option</th>
+ <th class="sbc">normal</th>
+ <th class="sbc"><a class="sbc" href="JavaScript:gleich(0);">=&gt;</a></th>
+ <th class="sbc">highlighted</th>
+ <th class="sbc">gedr&uuml;ckt</th>
+</tr>
+<tr>
+ <td class="sbc">Rahmenst&auml;rke</td>
+ <td class="sbc"><input type="Text" name="NborderWidth" value="2" size="5" maxlength="5" onChange="rebuildt();">px</td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(1);">=&gt;</a></td>
+ <td class="sbc"><input type="Text" name="HborderWidth" value="2" size="5" maxlength="5" onChange="rebuildt();">px</td>
+ <td class="sbc"><input type="Text" name="PborderWidth" value="2" size="5" maxlength="5" onChange="rebuildt();">px</td>
+</tr>
+<tr>
+ <td class="sbc">Art des Rahmens</td>
+ <td class="sbc"><select name="NborderStyle" size="1" onChange="rebuildt();"><option value="none">none</option><!--<option value="hidden">hidden</option>--><option value="dotted">dotted</option><option value="dashed">dashed</option><option value="solid">solid</option><option value="double">double</option><option value="groove">groove</option><option value="ridge">ridge</option><option value="inset">inset</option><option value="outset" selected>outset</option></select></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(2);">=&gt;</a></td>
+ <td class="sbc"><select name="HborderStyle" size="1" onChange="rebuildt();"><option value="none">none</option><!--<option value="hidden">hidden</option>--><option value="dotted">dotted</option><option value="dashed">dashed</option><option value="solid">solid</option><option value="double">double</option><option value="groove">groove</option><option value="ridge">ridge</option><option value="inset">inset</option><option value="outset" selected>outset</option></select></td>
+ <td class="sbc"><select name="PborderStyle" size="1" onChange="rebuildt();"><option value="none">none</option><!--<option value="hidden">hidden</option>--><option value="dotted">dotted</option><option value="dashed">dashed</option><option value="solid">solid</option><option value="double">double</option><option value="groove">groove</option><option value="ridge">ridge</option><option value="inset" selected>inset</option><option value="outset">outset</option></select></td>
+</tr>
+<tr>
+ <td class="sbc">Rahmenfarbe</td>
+ <td class="sbc">#<input type="Text" name="NborderColor" value="d4d0c8" size="6" maxlength="6" onChange="rebuildt();"></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(3);">=&gt;</a></td>
+ <td class="sbc">#<input type="Text" name="HborderColor" value="d4d0c8" size="6" maxlength="6" onChange="rebuildt();"></td>
+ <td class="sbc">#<input type="Text" name="PborderColor" value="d4d0c8" size="6" maxlength="6" onChange="rebuildt();"></td>
+</tr>
+<tr>
+ <td class="sbc">Buttonfarbe</td>
+ <td class="sbc">#<input type="Text" name="NbackgroundColor" value="d4d0c8" size="6" maxlength="6" onChange="rebuildt();"></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(4);">=&gt;</a></td>
+ <td class="sbc">#<input type="Text" name="HbackgroundColor" value="d4d0c8" size="6" maxlength="6" onChange="rebuildt();"></td>
+ <td class="sbc">#<input type="Text" name="PbackgroundColor" value="d4d0c8" size="6" maxlength="6" onChange="rebuildt();"></td>
+</tr>
+<tr>
+ <td class="sbc">Textfarbe</td>
+ <td class="sbc">#<input type="Text" name="Ncolor" value="000000" size="6" maxlength="6" onChange="rebuildt();"></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(5);">=&gt;</a></td>
+ <td class="sbc">#<input type="Text" name="Hcolor" value="000000" size="6" maxlength="6" onChange="rebuildt();"></td>
+ <td class="sbc">#<input type="Text" name="Pcolor" value="000000" size="6" maxlength="6" onChange="rebuildt();"></td>
+</tr>
+<tr>
+ <td class="sbc">Beschriftung</td>
+ <td class="sbc"><input type="Text" name="Nbeschriftung" value="Link" size="20" maxlength="250" onChange="rebuildt();"></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(6);">=&gt;</a></td>
+ <td class="sbc"><input type="Text" name="Hbeschriftung" value="Link" size="20" maxlength="250" onChange="rebuildt();"></td>
+ <td class="sbc"><input type="Text" name="Pbeschriftung" value="Link" size="20" maxlength="250" onChange="rebuildt();"></td>
+</tr>
+<tr>
+ <td class="sbc">Innenabstand</td>
+ <td class="sbc"><input type="Text" name="Npadding" value="0px 10% 0px 10%" size="20" maxlength="250" onChange="rebuildt();"></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(7);">=&gt;</a></td>
+ <td class="sbc"><input type="Text" name="Hpadding" value="0px 10% 0px 10%" size="20" maxlength="250" onChange="rebuildt();"></td>
+ <td class="sbc"><input type="Text" name="Ppadding" value="0px 10% 0px 10%" size="20" maxlength="250" onChange="rebuildt();"></td>
+</tr>
+<tr>
+ <td class="sbc">Schriftart</td>
+ <td class="sbc"><input type="Text" name="NfontFamily" value="serif" size="20" maxlength="250" onChange="rebuildt();"></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(8);">=&gt;</a></td>
+ <td class="sbc"><input type="Text" name="HfontFamily" value="serif" size="20" maxlength="250" onChange="rebuildt();"></td>
+ <td class="sbc"><input type="Text" name="PfontFamily" value="serif" size="20" maxlength="250" onChange="rebuildt();"></td>
+</tr>
+<tr>
+ <td class="sbc">Schriftgr&ouml;&szlig;e</td>
+ <td class="sbc"><input type="Text" name="NfontSize" value="10" size="5" maxlength="5" onChange="rebuildt();">pt</td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(9);">=&gt;</a></td>
+ <td class="sbc"><input type="Text" name="HfontSize" value="10" size="5" maxlength="5" onChange="rebuildt();">pt</td>
+ <td class="sbc"><input type="Text" name="PfontSize" value="10" size="5" maxlength="5" onChange="rebuildt();">pt</td>
+</tr>
+<tr>
+ <td class="sbc">Schriftextras</td>
+ <td class="sbc"><input type="Checkbox" name="NfontWeight" value="NfontWeight" onChange="rebuildt();">Fett<br><input type="Checkbox" name="NfontStyle" value="NfontStyle" onChange="rebuildt();">Kursiv<br><input type="Checkbox" name="NfontVariant" value="NfontVariant" onChange="rebuildt();">Kapit&auml;lchen<br><input type="Checkbox" name="NtextDecoration0" value="NtextDecoration0" onChange="rebuildt();">unterstrichen<br><input type="Checkbox" name="NtextDecoration1" value="NtextDecoration1" onChange="rebuildt();">ueberstrichen<br><input type="Checkbox" name="NtextDecoration2" value="NtextDecoration2" onChange="rebuildt();">durchgestrichen<br></td>
+ <td class="sbc"><a class="sbc" href="JavaScript:gleich(10);">=&gt;</a></td>
+ <td class="sbc"><input type="Checkbox" name="HfontWeight" value="HfontWeight" onChange="rebuildt();">Fett<br><input type="Checkbox" name="HfontStyle" value="HfontStyle" onChange="rebuildt();">Kursiv<br><input type="Checkbox" name="HfontVariant" value="HfontVariant" onChange="rebuildt();">Kapit&auml;lchen<br><input type="Checkbox" name="HtextDecoration0" value="HtextDecoration0" onChange="rebuildt();">unterstrichen<br><input type="Checkbox" name="HtextDecoration1" value="HtextDecoration1" onChange="rebuildt();">ueberstrichen<br><input type="Checkbox" name="HtextDecoration2" value="HtextDecoration2" onChange="rebuildt();">durchgestrichen<br></td>
+ <td class="sbc"><input type="Checkbox" name="PfontWeight" value="PfontWeight" onChange="rebuildt();">Fett<br><input type="Checkbox" name="PfontStyle" value="PfontStyle" onChange="rebuildt();">Kursiv<br><input type="Checkbox" name="PfontVariant" value="PfontVariant" onChange="rebuildt();">Kapit&auml;lchen<br><input type="Checkbox" name="PtextDecoration0" value="PtextDecoration0" onChange="rebuildt();">unterstrichen<br><input type="Checkbox" name="PtextDecoration1" value="PtextDecoration1" onChange="rebuildt();">ueberstrichen<br><input type="Checkbox" name="PtextDecoration2" value="PtextDecoration2" onChange="rebuildt();">durchgestrichen<br></td>
+</tr>
+<tr>
+ <td class="sbc">Id</td>
+ <td colspan="4" class="sbc"><input type="Text" name="Nid" value="bt00" size="20" maxlength="100" onChange="rebuildt();">&nbsp;&nbsp;<input type="Checkbox" name="Nthisv" value="Nthisv" onChange="rebuildt();">this-Objekt verwenden</td>
+</tr>
+<tr>
+ <td class="sbc">Clickereignis</td>
+ <td colspan="4" class="sbc"><input type="Text" name="Pereignis" value="" size="50" maxlength="1000" onChange="rebuildt();"></td>
+</tr>
+</table>
+</form>
+
+<p class="sbchead">Vorschau</p>
+<div style="text-align:center;"><div style="text-align:center;padding:20px;background-color:#FFFFFF;border:solid 1px #000000;">
+<button id="vorschau" onMouseOver="high();" onMouseDown="press();" onMouseOut="norm();" onMouseUp="high();" onClick="testclick();">lalalalal</button>
+</div></div>
+
+<p class="sbchead">Code</p>
+<div style="text-align:center;"><div id="code" class="sbccode" style="">
+HIER MUSS EIGENTLICH DER CODE STEHEN
+</div></div>
+
+</div>
+
+<script>
+rebuildt();
+</script>
+
+</body>
+</html>

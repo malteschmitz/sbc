@@ -1,0 +1,75 @@
+body {
+  font-size: 8pt;
+  font-family: MS Sans Serif,sans-serif;
+  background-color: #D4D0C8;
+  margin: 50pt;
+}
+.fork {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+div.sbc {
+  width: 800px;
+  margin: 50pt auto 100pt;
+}
+a.sbc: link {
+  font-style: normal;
+  font-size: 8pt;
+  font-family: MS Sans Serif,sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+a.sbc: visited {
+  font-style: normal;
+  font-size: 8pt;
+  font-family: MS Sans Serif,sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+a.sbc: hover {
+  font-style: normal;
+  font-size: 8pt;
+  font-family: MS Sans Serif,sans-serif;
+  text-decoration: none;
+  color: #0055FF;
+}
+a.sbc: active {
+  font-style: normal;
+  font-size: 8pt;
+  font-family: MS Sans Serif,sans-serif;
+  text-decoration: none;
+  color: #0055FF;
+}
+td.sbc {
+  font-size: 8pt;
+  font-family: MS Sans Serif,sans-serif;
+  text-align: left;
+  border-bottom: solid 1px #000000;
+  padding: 2px;
+}
+th.sbc {
+  font-size: 8pt;
+  font-family: MS Sans Serif,sans-serif;
+  font-weight: bold;
+  border-bottom: solid 1px #000000;
+  border-top: solid 1px #000000;
+}
+table.sbc {
+  border-collapse: collapse;
+}
+div.sbccode {
+  background-color: FFFFFF;
+  text-align: left;
+  font-family: monospace;
+  font-weight: normal;
+  font-size: 8pt;
+  border: solid 1px #000000;
+}
+p.sbchead {
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: MS Sans Serif,sans-serif;
+  margin: 20px 0px 5px 0px;
+}
